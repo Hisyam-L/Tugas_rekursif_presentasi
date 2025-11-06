@@ -1,12 +1,7 @@
-# Implementasi Stack dengan Node & Rekursi (Tanpa OOP)
-# -----------------------------------------------------
 
 def Node(data):
     """Membuat node baru"""
     return {"data": data, "next": None}
-
-
-# ------------------ Fungsi Stack ------------------
 
 def push(top):
     """Menambahkan data ke dalam stack"""
@@ -19,6 +14,7 @@ def push(top):
 
 def pop(top):
     """Menghapus data teratas dari stack"""
+    
     if top is None:
         print("Stack kosong, tidak bisa menghapus data.")
         return None
@@ -43,7 +39,6 @@ def tampilkan_stack(top):
         print_stack(top)
 
 
-# ------------------ Fungsi Main ------------------
 
 def main():
     top = None
@@ -70,6 +65,5 @@ def main():
             print("Pilihan tidak valid!")
 
 
-# Jalankan program
 if __name__ == "__main__":
     main()
